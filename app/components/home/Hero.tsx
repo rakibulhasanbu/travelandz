@@ -4,7 +4,7 @@ import heroImage from '../../assets/hero.png'
 export default function Hero() {
     return (
         <div className='relative'>
-            <Image src={heroImage} height={660} width={1280} alt="hero" className="h-[90dvh] object-cover rounded-3xl" />
+            <Image src={heroImage} height={660} width={1280} alt="hero" className="h-[90dvh] w-full object-cover rounded-3xl" />
             <div className='absolute top-0 left-0 bg-transparent w-full h-full p-28 text-center'>
                 <h2 className="text-white text-5xl font-bold px-24 pb-5">Experience Wanderlust at its Finest with AI-Powered Travel Planner</h2>
                 <h4 className="text-white">Discover the best prices, secure your mobile tickets, and set off on a journey of a lifetime.</h4>
