@@ -1,9 +1,15 @@
-import Image from "next/image";
+import Contact from "./components/home/Contact";
+import Features from "./components/home/Features";
+import Hero from "./components/home/Hero";
+import TripSection from "./components/home/TripSection";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className='h-screen'>
-      msin
+    <div className='container mx-auto'>
+      <Hero />
+      <Features />
+      <TripSection />
+      <Contact />
     </div>
   );
 }

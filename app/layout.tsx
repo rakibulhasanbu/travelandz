@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${plus_Jakarta_Sans.className} bg-darkish/5`}>
+      <body className={`${plus_Jakarta_Sans.className} bg-[#FBFBFB]`}>
         <Navbar />
         {children}
         <Footer />
