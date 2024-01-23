@@ -3,7 +3,7 @@ import heroImage from '../../assets/hero.png'
 
 export default function Hero() {
     return (
-        <div className='relative'>
+        <div className='relative lg:pt-6 '>
             <Image placeholder="blur" src={heroImage} height={660} width={1280} alt="hero" className="h-screen lg:h-[90dvh] w-full object-cover lg:rounded-3xl" />
             <div className='absolute top-0 left-0 bg-transparent w-full h-full px-5 py-12 lg:p-28 text-center'>
                 <h2 className="text-white text-3xl lg:text-5xl font-bold lg:px-24 pb-5">Experience Wanderlust at its Finest with AI-Powered Travel Planner</h2>
