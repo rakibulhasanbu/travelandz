@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { FaCirclePlus } from "react-icons/fa6";
 import { SlArrowDown, SlArrowUp } from "react-icons/sl";
+import EventCard from "./EventCard";
 
 export default function CollapseSection() {
     const [open, setOpen] = useState(false);
@@ -31,10 +32,13 @@ export default function CollapseSection() {
                             <button className="text-[#4E4E4E] text-center px-3 py-1 rounded-full bg-[#F4F4F4]">Afternoon</button>
                             <button className="text-[#4E4E4E] text-center px-3 py-1 rounded-full bg-[#F4F4F4]">Dining</button>
                         </div>
-                        <div className='flex items-center gap-2'>
+                        <div className='flex items-center gap-2 cursor-pointer'>
                             <FaCirclePlus className="text-primary" />
                             <h3 className="text-lg font-semibold text-primary border-b border-b-primary">Add activity</h3>
                         </div>
+                    </div>
+                    <div className='py-4'>
+                        <EventCard />
                     </div>
                 </div>
             }

@@ -20,7 +20,7 @@ export default function FamousGallery() {
                         <span className="flex items-center"><RxDotFilled /> Paseo de las Illetas, 7, Mallorca</span>
                     </p>
                 </div>
-                <div className='text-primary flex items-center gap-2'>
+                <div className='text-primary cursor-pointer flex items-center gap-2'>
                     <LuRefreshCcw className="text-xl" /> <span className="border-b border-b-primary text-gradient">Try Another Hotel</span>
                 </div>
             </div>

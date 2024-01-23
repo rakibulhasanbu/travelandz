@@ -11,7 +11,7 @@ export default function Navbar() {
             </Link>
             <div className='flex items-center gap-8 font-medium'>
                 <p className="cursor-pointer">About Travelandz</p>
-                <p className="cursor-pointer">Famous destinations</p>
+                <Link href={'/famous-destinations'}>Famous destinations</Link>
                 <p className="cursor-pointer">Contact us</p>
             </div>
             <div className='w-11 h-11 rounded-full border shadow bg-white flex items-center justify-center'>
