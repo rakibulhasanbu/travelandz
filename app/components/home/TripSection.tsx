@@ -1,5 +1,7 @@
 import Image from "next/image";
 import dubai from '../../assets/dubai.png'
+import petra from '../../assets/petra.png'
+import istambul from '../../assets/istambul.png'
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 
 export default function TripSection() {
@@ -22,8 +24,8 @@ export default function TripSection() {
             </div>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-6'>
                 <Image placeholder="blur" src={dubai} height={510} width={412} alt="Dubai" />
-                <Image placeholder="blur" src={dubai} height={510} width={412} alt="Dubai" />
-                <Image placeholder="blur" src={dubai} height={510} width={412} alt="Dubai" />
+                <Image placeholder="blur" src={petra} height={510} width={412} alt="petra" />
+                <Image placeholder="blur" src={istambul} height={510} width={412} alt="istambul" />
             </div>
         </div>
     );
