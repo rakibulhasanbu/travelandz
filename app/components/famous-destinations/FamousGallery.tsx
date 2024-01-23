@@ -35,11 +35,11 @@ export default function FamousGallery() {
                     <Image placeholder="blur" src={hotelImage2} width={412} height={223} alt="hotel image" className="rounded-tr-xl" />
                     <Image placeholder="blur" src={hotelImage3} width={412} height={223} alt="hotel image" className="rounded-br-xl" />
                 </div>
-                <div className='absolute right-1 lg:right-6 bottom-3 lg:bottom-6 rounded-xl z-10'>
-                    <div className='hidden lg:flex items-center gap-2 bg-white  px-4 py-2  font-semibold text-lg cursor-pointer'>
+                <div className='absolute right-1 lg:right-6 bottom-3 lg:bottom-6 z-10'>
+                    <div className='hidden lg:flex items-center gap-2 bg-white rounded-xl  px-4 py-2  font-semibold text-lg cursor-pointer'>
                         <CgMenuGridO /> <span>Show all photos</span>
                     </div>
-                    <div className='rounded-xl px-3 py-2 bg-black/80 text-white text-sm'>
+                    <div className='lg:hidden rounded-xl px-3 py-2 bg-black/80 text-white text-sm'>
                         1/25
                     </div>
                 </div>
