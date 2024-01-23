@@ -9,32 +9,39 @@ import { CgMenuGridO } from "react-icons/cg";
 
 export default function FamousGallery() {
     return (
-        <div className='py-10'>
+        <div className='lg:py-10 flex flex-col-reverse lg:flex-col '>
             {/* this is header part  */}
-            <div className='flex items-start justify-between text-textDark'>
+            <div className='pt-6 lg:pt-0 flex items-start justify-between text-textDark'>
                 <div className=''>
-                    <h2 className="text-3xl font-bold pb-2">Hotel de Mar Gran Meliá</h2>
-                    <p className="flex items-center gap-1">
+                    <h2 className="text-2xl lg:text-3xl font-bold pb-2">Hotel de Mar Gran Meliá</h2>
+                    <p className="flex items-start lg:items-center gap-1">
                         <span className="flex items-center gap-1"><FaStar /> 4.3</span>
-                        <span className="flex items-center"><RxDotFilled /> (112 reviews)</span>
-                        <span className="flex items-center"><RxDotFilled /> Paseo de las Illetas, 7, Mallorca</span>
+                        <div className='flex flex-col lg:flex-row'>
+                            <span className="flex items-center"><RxDotFilled /> (112 reviews)</span>
+                            <span className="flex items-center"><RxDotFilled /> Paseo de las Illetas, 7, Mallorca</span>
+                        </div>
                     </p>
                 </div>
-                <div className='text-primary cursor-pointer flex items-center gap-2'>
+                <div className='text-primary cursor-pointer hidden lg:flex items-center gap-2'>
                     <LuRefreshCcw className="text-xl" /> <span className="border-b border-b-primary text-gradient">Try Another Hotel</span>
                 </div>
             </div>
             {/* this is image section part  */}
-            <div className='pt-10 flex items-center gap-6 relative'>
-                <div className=''>
-                    <Image placeholder="blur" src={hotelImage1} width={850} height={420} alt="hotel image" className="rounded-l-xl" />
+            <div className='lg:pt-10 flex items-center lg:gap-6 relative'>
+                <div className='-mx-4 lg:-mx-0'>
+                    <Image placeholder="blur" src={hotelImage1} width={850} height={420} alt="hotel image" className="lg:rounded-l-xl" />
                 </div>
-                <div className='flex flex-col gap-6'>
+                <div className='hidden lg:flex flex-col gap-6'>
                     <Image placeholder="blur" src={hotelImage2} width={412} height={223} alt="hotel image" className="rounded-tr-xl" />
                     <Image placeholder="blur" src={hotelImage3} width={412} height={223} alt="hotel image" className="rounded-br-xl" />
                 </div>
-                <div className='absolute right-6 bottom-6 flex items-center gap-2 rounded-xl bg-white px-4 py-2 font-semibold text-lg cursor-pointer z-10'>
-                    <CgMenuGridO /> <span>Show all photos</span>
+                <div className='absolute right-1 lg:right-6 bottom-3 lg:bottom-6 rounded-xl z-10'>
+                    <div className='hidden lg:flex items-center gap-2 bg-white  px-4 py-2  font-semibold text-lg cursor-pointer'>
+                        <CgMenuGridO /> <span>Show all photos</span>
+                    </div>
+                    <div className='rounded-xl px-3 py-2 bg-black/80 text-white text-sm'>
+                        1/25
+                    </div>
                 </div>
             </div>
         </div>

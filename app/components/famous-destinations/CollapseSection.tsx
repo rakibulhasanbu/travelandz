@@ -37,13 +37,17 @@ export default function CollapseSection({ day, date }: TCollapseSection) {
                             <button className="text-[#4E4E4E] text-center px-3 py-1 rounded-full bg-[#F4F4F4]">Afternoon</button>
                             <button className="text-[#4E4E4E] text-center px-3 py-1 rounded-full bg-[#F4F4F4]">Dining</button>
                         </div>
-                        <div className='flex items-center gap-2 cursor-pointer'>
+                        <div className='hidden lg:flex items-center gap-2 cursor-pointer'>
                             <FaCirclePlus className="text-primary" />
                             <h3 className="text-lg font-semibold text-primary border-b border-b-primary">Add activity</h3>
                         </div>
                     </div>
                     <div className='py-4'>
                         <EventCard />
+                    </div>
+                    <div className='lg:hidden flex items-center justify-center gap-2 cursor-pointer'>
+                        <FaCirclePlus className="text-primary" />
+                        <h3 className="text-lg font-semibold text-primary border-b border-b-primary">Add activity</h3>
                     </div>
                 </div>
             }
