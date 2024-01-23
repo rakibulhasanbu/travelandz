@@ -18,7 +18,7 @@ export default function Navbar() {
                 <div className='hidden lg:flex items-center gap-8 font-medium'>
                     <p className="cursor-pointer">About Travelandz</p>
                     <Link href={'/famous-destinations'}>Famous destinations</Link>
-                    <Link href={'#contact'} className="cursor-pointer">Contact us</Link>
+                    <Link href={'/#contact'} className="cursor-pointer">Contact us</Link>
                 </div>
                 <div className='hidden lg:flex items-center justify-center w-11 h-11 rounded-full border shadow bg-white'>
                     <FaRegUser />
@@ -33,7 +33,7 @@ export default function Navbar() {
                             <Link href={'/famous-destinations'}>Famous destinations</Link>
                         </p>
                         <p onClick={() => setOpen(prev => !prev)} className="cursor-pointer">
-                            <Link href={'#contact'} >Contact us</Link>
+                            <Link href={'/#contact'} >Contact us</Link>
                         </p>
                     </div>
                 }
