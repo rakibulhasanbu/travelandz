@@ -3,6 +3,7 @@ import dubai from '../../assets/dubai.png'
 import petra from '../../assets/petra.png'
 import istambul from '../../assets/istambul.png'
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 export default function TripSection() {
     return (
@@ -23,15 +24,48 @@ export default function TripSection() {
                 </div>
             </div>
             <div className='flex flex-col lg:flex-row items-center gap-4 lg:gap-6'>
-                <div className='overflow-hidden h-[450px] lg:h-[540px] w-full rounded-2xl cursor-pointer'>
-                    <Image placeholder="blur" src={dubai} height={510} width={412} alt="Dubai" className="w-full h-full hover:-translate-y-16 transition-all duration-500" />
+                <div className='relative overflow-hidden bg-black h-[450px] lg:h-[540px] w-full rounded-2xl cursor-pointer'>
+                    <div className=' hover:-translate-y-[22%] transition-all duration-500'>
+                        <Image placeholder="blur" src={dubai} height={510} width={412} alt="Dubai" className="w-full h-full" />
+                        <div className='-translate-y-[75px] py-4 px-8 bg-black/80'>
+                            <h3 className="text-3xl font-bold text-white pb-4">Dubai</h3>
+                            <p className="text-white text-[17px]">Immerse yourself in the modern city known for its impressive skyline, luxury shopping, and man-made attractions such as the iconic Burj Khalifa, the worlds tallest building.</p>
+                            <div className='flex items-center gap-1 pt-2 text-white font-semibold text-lg'>
+                                <h2 className="border-b border-b-white">Plan your trip</h2>
+                                <IoIosArrowRoundForward />
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className='overflow-hidden h-[450px] lg:h-[540px] w-full rounded-2xl cursor-pointer'>
-                    <Image placeholder="blur" src={petra} height={510} width={412} alt="petra" className="w-full hover:-translate-y-16 transition-all duration-500" />
+
+                <div className='relative overflow-hidden bg-black h-[450px] lg:h-[540px] w-full rounded-2xl cursor-pointer'>
+                    <div className=' hover:-translate-y-[22%] transition-all duration-500'>
+                        <Image placeholder="blur" src={petra} height={510} width={412} alt="petra" className="w-full h-full" />
+                        <div className='-translate-y-[75px] py-4 px-8 bg-black/80'>
+                            <h3 className="text-3xl font-bold text-white pb-4">Petra</h3>
+                            <p className="text-white text-[17px]">Immerse yourself in the modern city known for its impressive skyline, luxury shopping, and man-made attractions such as the iconic Burj Khalifa, the worlds tallest building.</p>
+                            <div className='flex items-center gap-1 pt-2 text-white font-semibold text-lg'>
+                                <h2 className="border-b border-b-white">Plan your trip</h2>
+                                <IoIosArrowRoundForward />
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className='overflow-hidden h-[450px] lg:h-[540px] w-full rounded-2xl cursor-pointer'>
-                    <Image placeholder="blur" src={istambul} height={510} width={412} alt="istambul" className="w-full hover:-translate-y-16 transition-all duration-500" />
+
+                <div className='relative overflow-hidden bg-black h-[450px] lg:h-[540px] w-full rounded-2xl cursor-pointer'>
+                    <div className=' hover:-translate-y-[22%] transition-all duration-500'>
+                        <Image placeholder="blur" src={istambul} height={510} width={412} alt="istambul" className="w-full h-full" />
+                        <div className='-translate-y-[75px] py-4 px-8 bg-black/80'>
+                            <h3 className="text-3xl font-bold text-white pb-4">Itambul</h3>
+                            <p className="text-white text-[17px]">Immerse yourself in the modern city known for its impressive skyline, luxury shopping, and man-made attractions such as the iconic Burj Khalifa, the worlds tallest building.</p>
+                            <div className='flex items-center gap-1 pt-2 text-white font-semibold text-lg'>
+                                <h2 className="border-b border-b-white">Plan your trip</h2>
+                                <IoIosArrowRoundForward />
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
     );
