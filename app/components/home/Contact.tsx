@@ -2,7 +2,7 @@ import { MdArrowOutward } from "react-icons/md";
 
 export default function Contact() {
     return (
-        <div className='py-20 lg:py-44 lg:px-64 px-4'>
+        <div id="contact" className='py-20 lg:py-44 lg:px-64 px-4'>
             <h1 className="text-2xl lg:text-4xl font-bold pb-4 lg:pb-6 text-center">How Can We Help?</h1>
             <p className="lg:text-lg pb-12 text-center">Travelandz is an AI trip planner that uses the tools of travel agencies, allowing it to offer the best price for hotels and activities available.</p>
 
