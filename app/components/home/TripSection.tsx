@@ -22,10 +22,16 @@ export default function TripSection() {
                     </div>
                 </div>
             </div>
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-6'>
-                <Image placeholder="blur" src={dubai} height={510} width={412} alt="Dubai" />
-                <Image placeholder="blur" src={petra} height={510} width={412} alt="petra" />
-                <Image placeholder="blur" src={istambul} height={510} width={412} alt="istambul" />
+            <div className='flex flex-col lg:flex-row items-center gap-4 lg:gap-6'>
+                <div className='overflow-hidden h-[450px] lg:h-[540px] w-full rounded-2xl cursor-pointer'>
+                    <Image placeholder="blur" src={dubai} height={510} width={412} alt="Dubai" className="w-full h-full hover:-translate-y-16 transition-all duration-500" />
+                </div>
+                <div className='overflow-hidden h-[450px] lg:h-[540px] w-full rounded-2xl cursor-pointer'>
+                    <Image placeholder="blur" src={petra} height={510} width={412} alt="petra" className="w-full hover:-translate-y-16 transition-all duration-500" />
+                </div>
+                <div className='overflow-hidden h-[450px] lg:h-[540px] w-full rounded-2xl cursor-pointer'>
+                    <Image placeholder="blur" src={istambul} height={510} width={412} alt="istambul" className="w-full hover:-translate-y-16 transition-all duration-500" />
+                </div>
             </div>
         </div>
     );
