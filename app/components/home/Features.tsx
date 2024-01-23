@@ -24,12 +24,12 @@ export default function Features() {
     ]
 
     return (
-        <div className='py-44  text-textDark'>
-            <div className='max-w-4xl space-y-6 text-center mx-auto'>
-                <h1 className="text-[40px] font-bold px-24">Unparalleled Features for Effortless AI Trip Planning</h1>
+        <div className='py-20 lg:py-44  text-textDark px-4 lg:px-0'>
+            <div className='w-full lg:max-w-4xl space-y-6 text-center mx-auto'>
+                <h1 className="text-2xl lg:text-[40px] font-bold lg:px-24">Unparalleled Features for Effortless AI Trip Planning</h1>
                 <p className="text-lg">Travelandz is an AI trip planner that uses the tools of travel agencies, allowing it to offer the best price for hotels and activities available.</p>
             </div>
-            <div className='mt-14 grid grid-cols-3 gap-6'>
+            <div className='mt-14 grid grid-cols-1 lg:grid-cols-3 gap-6'>
                 {
                     featureCardData.map((feature, index) => (
                         <FeatureCard key={index} feature={feature} />
