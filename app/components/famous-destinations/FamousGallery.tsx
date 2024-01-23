@@ -27,11 +27,11 @@ export default function FamousGallery() {
             {/* this is image section part  */}
             <div className='pt-10 flex items-center gap-6 relative'>
                 <div className=''>
-                    <Image src={hotelImage1} width={850} height={420} alt="hotel image" className="rounded-l-xl" />
+                    <Image placeholder="blur" src={hotelImage1} width={850} height={420} alt="hotel image" className="rounded-l-xl" />
                 </div>
                 <div className='flex flex-col gap-6'>
-                    <Image src={hotelImage2} width={412} height={223} alt="hotel image" className="rounded-tr-xl" />
-                    <Image src={hotelImage3} width={412} height={223} alt="hotel image" className="rounded-br-xl" />
+                    <Image placeholder="blur" src={hotelImage2} width={412} height={223} alt="hotel image" className="rounded-tr-xl" />
+                    <Image placeholder="blur" src={hotelImage3} width={412} height={223} alt="hotel image" className="rounded-br-xl" />
                 </div>
                 <div className='absolute right-6 bottom-6 flex items-center gap-2 rounded-xl bg-white px-4 py-2 font-semibold text-lg cursor-pointer z-10'>
                     <CgMenuGridO /> <span>Show all photos</span>

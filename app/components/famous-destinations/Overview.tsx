@@ -59,9 +59,10 @@ export default function Overview() {
                     <p>I have added recommended experiences for you, please feel free to add or remove new ones.</p>
                     <div className='py-10 space-y-6'>
 
-                        <CollapseSection />
-                        <CollapseSection />
-                        <CollapseSection />
+                        <CollapseSection day="Day 1" date="03 June 2023" />
+                        <CollapseSection day="Day 2" date="04 June 2023" />
+                        <CollapseSection day="Day 3" date="05 June 2023" />
+                        <CollapseSection day="Day 4" date="06 June 2023" />
                     </div>
                 </div>
             </div>

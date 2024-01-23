@@ -21,9 +21,9 @@ export default function TripSection() {
                 </div>
             </div>
             <div className='grid grid-cols-3 gap-6'>
-                <Image src={dubai} height={510} width={412} alt="Dubai" />
-                <Image src={dubai} height={510} width={412} alt="Dubai" />
-                <Image src={dubai} height={510} width={412} alt="Dubai" />
+                <Image placeholder="blur" src={dubai} height={510} width={412} alt="Dubai" />
+                <Image placeholder="blur" src={dubai} height={510} width={412} alt="Dubai" />
+                <Image placeholder="blur" src={dubai} height={510} width={412} alt="Dubai" />
             </div>
         </div>
     );

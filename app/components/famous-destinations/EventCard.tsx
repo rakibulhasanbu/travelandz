@@ -7,7 +7,7 @@ import { BsPeopleFill } from "react-icons/bs";
 export default function EventCard() {
     return (
         <div className='max-w-sm relative rounded-2xl shadow-sm border border-borderColor'>
-            <Image src={eventImage} width={384} height={140} alt="event image" className="rounded-t-2xl" />
+            <Image placeholder="blur" src={eventImage} width={384} height={140} alt="event image" className="rounded-t-2xl" />
 
             <div className='p-4'>
                 <h2 className="text-lg font-bold text-textDark">Alcudia Bay 50-minutes tour from Alcudia</h2>

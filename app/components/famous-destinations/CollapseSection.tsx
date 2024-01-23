@@ -1,18 +1,23 @@
 'use client'
 
+interface TCollapseSection {
+    day: string;
+    date: string
+}
+
 import { useState } from "react";
 import { FaCirclePlus } from "react-icons/fa6";
 import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 import EventCard from "./EventCard";
 
-export default function CollapseSection() {
+export default function CollapseSection({ day, date }: TCollapseSection) {
     const [open, setOpen] = useState(false);
     return (
         <div className='shadow rounded-2xl'>
             <div onClick={() => setOpen(prev => (!prev))} className={`w-full flex items-center justify-between px-6 py-4 cursor-pointer ${open ? "rounded-t-2xl bg-[#F1F1F1]" : "rounded-2xl bg-white hover:bg-[#F1F1F1]"}`}>
-                <div className=''>
-                    <p className="text-lg text-textDark">Day 2</p>
-                    <p className="text-textGrey">04 June 2023</p>
+                <div className='flex items-center gap-8'>
+                    <p className="text-lg font-bold text-textDark">{day}</p>
+                    <p className="text-textGrey">{date}</p>
                 </div>
                 {
                     open ?
